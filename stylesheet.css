@@ -1,0 +1,55 @@
+.header {
+    height: 80px;
+    width: 100%;
+    font-family: "libre baskerville", serif;
+}
+.survey-form {
+    /* padding: 300px; */
+    width: 50vw;
+    background-color:white;
+    border:2px solid black;
+
+}
+.survey-form >p {
+text-align:center;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 40px;
+}
+p {
+    font-size: 20px;
+    font-weight: lighter; 
+}
+body{
+    background-color: grey;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-top: 1px solid black;
+}
+.form-row {
+    border: 1px solid red;
+    display: flex;
+    width: 100%;
+    padding: 5px;
+}
+.row-section {
+    width: 50%;
+    border: 1px solid blue;
+    padding: 5px;
+}
+.label {
+    display: flex;
+    justify-content: flex-end;
+}
+input {
+    width: 200px;
+}
