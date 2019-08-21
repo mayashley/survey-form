@@ -1,22 +1,110 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Cormorant+Garamond&display=swap" rel="stylesheet"> 
-    <meta charset="UTF-8">
+    <link
+      href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Cormorant+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
     <title>survey-form</title>
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
   </head>
   <!-- Google fonts -->
-<body>
-  <h1 id="title">IKEA Customer Survey</h1>
-  <div id=outside-form">
-    <p id="form-descp">
-      Let us know how we can help improve your shopping experience
-    </p>
-    
+  <body>
+    <div class="center-column">
+      <h1 id="title">IKEA Customer Survey</h1>
+      <div class="inside-form center-column">
+        <p class="form-description">
+          Let us know how we can help improve your shopping experience
+        </p>
+        <div class="form-container">
+          <form action="action.php">
+            <div class="form-row">
+              <div class="left-column">
+                <label for="name">* Name:</label>
+              </div>
+              <div class="right-column">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="your name"
+                  required
+                />
+              </div>
+            </div>
 
+
+
+            <div class="form-row">
+              <div class="left-column">
+                <label for="phone">* Phone:</label>
+              </div>
+              <div class="right-column">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                  placeholder="phone number"
+                  required
+                />
+              </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="left-column">
+                  <label for="email">* Email:</label>
+                </div>
+                <div class="right-column">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="email here"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="left-column">
+                  <label for="satisfaction"> How satisfied were you with your visit today?</label>
+                </div>
+                <div class="right-column">
+                  <select name="satisfaction">
+                    <option value="highly satisfied">Highly Satisfied</option>
+                    <option value="Somewhat satisfied">Somewhat Satisfied</option>
+                    <option value="Not Satisfied">Not Satisfied</option>
+                  </select>
+                </div>
+              </div>
 
   
+              <div class="form-row">
+                <div class="left-column">
+                  <label for="recommend"> * How likely is that you would recommend IKEA to a friend?</label>
+                </div>
+                <div class="right-column">
+                    <div class="form-row">
+                  <input  class="radio-button" type="radio" name="definitely" value="Definitely"> Definitely
+                    </div>
+                    <div class="form-row">
+                  <input class="radio-button" type="radio" name="Maybe" value="Maybe"> Maybe
+                </div>
+                <div class="form-row">
+                  <input class="radio-button" type="radio" name="No" value="No"> No
+                </div>
+                </div>
+              </div>
+              <!-- drop down, line 71-82     checkbox,lookup copy line 85-100   text area lookup  -->
+             
+
+
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
-
