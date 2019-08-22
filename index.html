@@ -34,8 +34,6 @@
               </div>
             </div>
 
-
-
             <div class="form-row">
               <div class="left-column">
                 <label for="phone">* Phone:</label>
@@ -52,56 +50,134 @@
               </div>
             </div>
 
+            <div class="form-row">
+              <div class="left-column">
+                <label for="email">* Email:</label>
+              </div>
+              <div class="right-column">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email here"
+                  required
+                />
+              </div>
+            </div>
 
             <div class="form-row">
-                <div class="left-column">
-                  <label for="email">* Email:</label>
-                </div>
-                <div class="right-column">
+              <div class="left-column">
+                <label for="satisfaction">
+                  How satisfied were you with your visit today?</label
+                >
+              </div>
+              <div class="right-column">
+                <select name="satisfaction">
+                  <option value="highly satisfied">Highly Satisfied</option>
+                  <option value="Somewhat satisfied">Somewhat Satisfied</option>
+                  <option value="Not Satisfied">Not Satisfied</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="left-column">
+                <label for="recommend">
+                  * How likely is that you would recommend IKEA to a
+                  friend?</label
+                >
+              </div>
+              <div class="right-column">
+                <div class="form-row">
                   <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="email here"
-                    required
+                    class="radio-button"
+                    type="radio"
+                    name="definitely"
+                    value="Definitely"
                   />
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="left-column">
-                  <label for="satisfaction"> How satisfied were you with your visit today?</label>
-                </div>
-                <div class="right-column">
-                  <select name="satisfaction">
-                    <option value="highly satisfied">Highly Satisfied</option>
-                    <option value="Somewhat satisfied">Somewhat Satisfied</option>
-                    <option value="Not Satisfied">Not Satisfied</option>
-                  </select>
-                </div>
-              </div>
-
-  
-              <div class="form-row">
-                <div class="left-column">
-                  <label for="recommend"> * How likely is that you would recommend IKEA to a friend?</label>
-                </div>
-                <div class="right-column">
-                    <div class="form-row">
-                  <input  class="radio-button" type="radio" name="definitely" value="Definitely"> Definitely
-                    </div>
-                    <div class="form-row">
-                  <input class="radio-button" type="radio" name="Maybe" value="Maybe"> Maybe
+                  Definitely
                 </div>
                 <div class="form-row">
-                  <input class="radio-button" type="radio" name="No" value="No"> No
+                  <input
+                    class="radio-button"
+                    type="radio"
+                    name="Maybe"
+                    value="Maybe"
+                  />
+                  Maybe
                 </div>
+                <div class="form-row">
+                  <input
+                    class="radio-button"
+                    type="radio"
+                    name="No"
+                    value="No"
+                  />
+                  No
                 </div>
               </div>
-              <!-- drop down, line 71-82     checkbox,lookup copy line 85-100   text area lookup  -->
-             
+            </div>
+            <!--      text area lookup  -->
+            <div class="form-row">
+              <div class="left-column">
+                <label for="likeability">
+                  What do you like most about IKEA?</label
+                >
+              </div>
+              <div class="right-column">
+                <select name="likeability">
+                  <option value="aaffordability">Affordability</option>
+                  <option value="Customer Service">Customer Service</option>
+                  <option value="Style">Style</option>
+                </select>
+              </div>
+            </div>
 
-
+            <div class="form-row">
+              <div class="left-column">
+                <label for="Improve">
+                  * How can we help improve your shopping experience?</label
+                >
+              </div>
+              <div class="right-column">
+                <div class="form-row">
+                  <input
+                    class="radio-button"
+                    type="checkbox"
+                    name="cheaper prices"
+                    value="cheaper prices"
+                  />
+                  Cheaper prices
+                </div>
+                <div class="form-row">
+                  <input
+                    class="radio-button"
+                    type="checkbox"
+                    name="more variety"
+                    value="more variety"
+                  />
+                  More variety
+                </div>
+                <div class="form-row">
+                  <input
+                    class="radio-button"
+                    type="checkbox"
+                    name="better quality"
+                    value="better quality"
+                  />
+                  Better quality
+                </div>
+                <div class="form-row">
+                  <input
+                    class="radio-button"
+                    type="checkbox"
+                    name="improve customer service"
+                    value="improve customer service"
+                  />
+                  Improve customer service
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
