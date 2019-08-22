@@ -10,13 +10,18 @@
     <link rel="stylesheet" href="stylesheet.css" type="text/css" />
   </head>
   <!-- Google fonts -->
-  <body>
+  <body id="grad">
+
+    <div class="top-text">
     <div class="center-column">
       <h1 id="title">IKEA Customer Survey</h1>
-      <div class="inside-form center-column">
+    <div class="inside-form center-column">
         <p class="form-description">
           Let us know how we can help improve your shopping experience
         </p>
+      
+      
+
         <div class="form-container">
           <form action="action.php">
             <div class="form-row">
@@ -33,6 +38,8 @@
                 />
               </div>
             </div>
+          </div>
+        
 
             <div class="form-row">
               <div class="left-column">
@@ -178,6 +185,19 @@
                 </div>
               </div>
             </div>
+            <div class="textarea">
+              <label for="textarea"
+                >Have any additional comments or suggestions?</label
+              >
+            </div>
+
+            <div class="comments">
+              <textarea rows="12" cols="40"
+                placeholder="Please add addition comments here...."
+              ></textarea>
+            </div>
+
+            <button id="submit" type="submit">Submit</button>
           </form>
         </div>
       </div>
