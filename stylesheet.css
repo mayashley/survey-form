@@ -64,7 +64,7 @@ select {
 .comments {
   margin: 30px;
 }
-#submit {
+.submit {
   background-color: blue;
   color: white;
   font-size: 1em;
@@ -75,6 +75,6 @@ select {
   margin: 30px;
 }
 
-#grad {
+.grad {
   background-image: linear-gradient(-90deg, #085dbd,rgba(255, 251, 5, 0.849),rgba(255, 251, 5, 0.849), rgb(18, 80, 194));
 }
